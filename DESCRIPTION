@@ -1,0 +1,18 @@
+Package: dscurve
+Type: Package
+Title: this package calculates basic statistics and gerenates a dose
+        response curve for C. elegans plate experiment
+Version: 0.1.0
+Author: alena savachenko
+Maintainer: The package maintainer <alena.savachenko@student.hu.nl>
+Description: The package has 2 functions: basestats, that represents basic statistics,and the dosisresponse function, that represent dose reponse curve ona given dataset.The package has build in dataset : celegance.R
+License: use_gpl3_license()
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Imports: ggplot2, readxl, tidyverse, plotly, dplyr
+NeedsCompilation: no
+Packaged: 2024-11-06 12:57:17 UTC; Mijn-PC

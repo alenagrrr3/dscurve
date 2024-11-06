@@ -1,0 +1,70 @@
+---
+title: "about-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{about-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(fig.align = "center", 
+               out.width = "90%",
+               fig.width = 6, fig.height = 5.5)
+```
+
+
+
+```{r  message=FALSE, warning=FALSE, echo=FALSE}
+library(dstats)
+library(tidyverse)
+library(ggplot2)
+library(plotly)
+```
+
+</br></br>
+## This package is written as a part of Workflows course  DSFB for educational purposes. 
+
+<p> This RMD file contains information about the package functions that were used during this course </p>
+</br></br>
+
+####  Function dosisresponse()
+</br></br>
+<p> This function creates a plot with a dose response curves for given components </p> 
+<p> Components: 2,6-diisopropylnaphthalene","S-medium","naphthalene", "decane"  </p>
+<p> The function takes as parameter a dataset and a list of chmikals to be analysed </p>
+
+</br></br>
+
+```{r message=FALSE, warning=FALSE}
+
+
+
+df <- data.frame(celegance)
+
+components <-c("2,6-diisopropylnaphthalene","S-medium","naphthalene", "decane")
+
+dosisresponse(df,components)
+
+
+```
+</br></br>
+</br></br>
+####  Function basestats()
+
+</br>
+
+</br>
+<p> This functions displays base summary of given data set, and a plot of raw data density  </p>
+<p> The function takes as parameter a dataset  </p>
+
+
+</br></br>
+
+### General summary of data:
+
+</br></br>
+```{r message=FALSE, warning=FALSE}
+basestats(df)
+```
+
